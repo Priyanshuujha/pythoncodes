@@ -1,0 +1,3 @@
+pip install pywhatkit
+import pywhatkit
+pywhatkit.sendwhatmsg("+91637737XXXX","hyy bro" , 14,56)
