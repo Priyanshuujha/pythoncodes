@@ -1,0 +1,11 @@
+print("1.kilometers to meters \n" "2.kilogram to gram\n" "3.fahrenheit to celsius\n")
+choice = int(input("enter your choice :"))
+if choice==1:
+    km = float(input("enter distannce in kilometers :"))
+    print("meters is:",km*1000)
+elif choice==2:
+    kg = float(input("enter weight in kilogram :"))
+    print("grams is:", kg*1000)
+elif choice==3:
+    fr = float(input("enter temperature in fahrenheit:"))
+    print("in celsius is:",(fr-32)/1.8)
