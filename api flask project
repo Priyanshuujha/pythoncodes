@@ -1,0 +1,47 @@
+pip install flask
+import flask
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def projects():
+    return """
+    <h1>I am projects page</h1>
+    <a href="/resume">Click here</a>
+    """
+
+@app.route("/resume")
+def resume():
+    return """
+    <h2>My Resume</h2>
+
+    <h3>Summary</h3>
+    <p>
+        Motivated and detail-oriented student seeking an internship at Linux World 
+        to apply academic knowledge in real-world projects. Strong foundation in 
+        Linux, programming, problem-solving, and teamwork. Eager to learn new 
+        technologies, contribute to project success, and grow through hands-on 
+        experience.
+    </p>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>Linux (basic administration, shell commands)</li>
+        <li>Python / C Programming</li>
+        <li>Git & GitHub</li>
+        <li>Problem-solving & teamwork</li>
+    </ul>
+
+    <h3>Projects</h3>
+    <ul>
+        <li>Linux automation scripts using Bash</li>
+        <li>Mini web server setup on Ubuntu</li>
+    </ul>
+
+    <h3>Education</h3>
+    <p>Your Degree – Your College</p>
+    """
+
+if __name__ == "__main__":
+    app.run()
